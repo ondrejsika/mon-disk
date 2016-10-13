@@ -28,7 +28,7 @@ def _sendmail(email_from, email_to, message, username, password, server, tls):
 
 
 def sendmail(subject, message):
-    message = 'Subject: %s\n\n%s' % (subject, message)
+    message = 'Subject: %s\nFrom: %s\n\n%s' % (subject, conf.EMAIL_FROM, message)
     return _sendmail(conf.EMAIL_FROM,
                      conf.EMAIL_TO,
                      message,
