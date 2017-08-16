@@ -1,10 +1,9 @@
 #!/usr/bin/env python
 
-URLS = (
-    'https://ondrejsika.com',
-    'https://ondrejsika.com/not-exists',
-    'https://ondrejsikaerror.com',
+DISKS = (
+    ('/', 20*10**9),
 )
+
 
 EMAIL_FROM = 'sikadevmail@gmail.com'
 EMAIL_TO = ['ondrejsika@ondrejsika.com']
